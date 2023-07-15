@@ -1,0 +1,17 @@
+F:\laptrinh\asp.net\Shop\Shop.Services\bin\Debug\net5.0\Shop.Services.deps.json
+F:\laptrinh\asp.net\Shop\Shop.Services\bin\Debug\net5.0\Shop.Services.dll
+F:\laptrinh\asp.net\Shop\Shop.Services\bin\Debug\net5.0\ref\Shop.Services.dll
+F:\laptrinh\asp.net\Shop\Shop.Services\bin\Debug\net5.0\Shop.Services.pdb
+F:\laptrinh\asp.net\Shop\Shop.Services\bin\Debug\net5.0\Shop.Data.dll
+F:\laptrinh\asp.net\Shop\Shop.Services\bin\Debug\net5.0\Shop.ViewModels.dll
+F:\laptrinh\asp.net\Shop\Shop.Services\bin\Debug\net5.0\Shop.Data.pdb
+F:\laptrinh\asp.net\Shop\Shop.Services\bin\Debug\net5.0\Shop.ViewModels.pdb
+F:\laptrinh\asp.net\Shop\Shop.Services\obj\Debug\net5.0\Shop.Services.csproj.AssemblyReference.cache
+F:\laptrinh\asp.net\Shop\Shop.Services\obj\Debug\net5.0\Shop.Services.GeneratedMSBuildEditorConfig.editorconfig
+F:\laptrinh\asp.net\Shop\Shop.Services\obj\Debug\net5.0\Shop.Services.AssemblyInfoInputs.cache
+F:\laptrinh\asp.net\Shop\Shop.Services\obj\Debug\net5.0\Shop.Services.AssemblyInfo.cs
+F:\laptrinh\asp.net\Shop\Shop.Services\obj\Debug\net5.0\Shop.Services.csproj.CoreCompileInputs.cache
+F:\laptrinh\asp.net\Shop\Shop.Services\obj\Debug\net5.0\Shop.Services.csproj.CopyComplete
+F:\laptrinh\asp.net\Shop\Shop.Services\obj\Debug\net5.0\Shop.Services.dll
+F:\laptrinh\asp.net\Shop\Shop.Services\obj\Debug\net5.0\ref\Shop.Services.dll
+F:\laptrinh\asp.net\Shop\Shop.Services\obj\Debug\net5.0\Shop.Services.pdb

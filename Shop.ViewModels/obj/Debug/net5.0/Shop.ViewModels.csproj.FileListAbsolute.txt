@@ -1,0 +1,15 @@
+F:\laptrinh\asp.net\Shop\Shop.ViewModels\obj\Debug\net5.0\Shop.ViewModels.csproj.AssemblyReference.cache
+F:\laptrinh\asp.net\Shop\Shop.ViewModels\obj\Debug\net5.0\Shop.ViewModels.GeneratedMSBuildEditorConfig.editorconfig
+F:\laptrinh\asp.net\Shop\Shop.ViewModels\obj\Debug\net5.0\Shop.ViewModels.AssemblyInfoInputs.cache
+F:\laptrinh\asp.net\Shop\Shop.ViewModels\obj\Debug\net5.0\Shop.ViewModels.AssemblyInfo.cs
+F:\laptrinh\asp.net\Shop\Shop.ViewModels\obj\Debug\net5.0\Shop.ViewModels.csproj.CoreCompileInputs.cache
+F:\laptrinh\asp.net\Shop\Shop.ViewModels\bin\Debug\net5.0\Shop.ViewModels.deps.json
+F:\laptrinh\asp.net\Shop\Shop.ViewModels\bin\Debug\net5.0\Shop.ViewModels.dll
+F:\laptrinh\asp.net\Shop\Shop.ViewModels\bin\Debug\net5.0\ref\Shop.ViewModels.dll
+F:\laptrinh\asp.net\Shop\Shop.ViewModels\bin\Debug\net5.0\Shop.ViewModels.pdb
+F:\laptrinh\asp.net\Shop\Shop.ViewModels\obj\Debug\net5.0\Shop.ViewModels.dll
+F:\laptrinh\asp.net\Shop\Shop.ViewModels\obj\Debug\net5.0\ref\Shop.ViewModels.dll
+F:\laptrinh\asp.net\Shop\Shop.ViewModels\obj\Debug\net5.0\Shop.ViewModels.pdb
+F:\laptrinh\asp.net\Shop\Shop.ViewModels\bin\Debug\net5.0\Shop.Data.dll
+F:\laptrinh\asp.net\Shop\Shop.ViewModels\bin\Debug\net5.0\Shop.Data.pdb
+F:\laptrinh\asp.net\Shop\Shop.ViewModels\obj\Debug\net5.0\Shop.ViewModels.csproj.CopyComplete

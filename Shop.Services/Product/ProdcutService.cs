@@ -18,9 +18,9 @@ namespace Shop.Services.Product
             dbcontext = context;
         }
 
-        public async Task AddViewcount(int ProductId)
+        public async Task AddViewcount(int productId)
         {
-            var product = await dbcontext.Products.FindAsync(ProductId);
+            var product = await dbcontext.Products.FindAsync(productId);
             product.ViewCount++;
             dbcontext.Update(product);
             await dbcontext.SaveChangesAsync();
@@ -129,11 +129,11 @@ namespace Shop.Services.Product
         }
 
 
-        public async Task<Result<bool>> UpdatePrice(int ProductId, decimal NewPrice)
+        public async Task<Result<bool>> UpdatePrice(int productId, decimal newPrice)
         {
-            var product = await dbcontext.Products.FindAsync(ProductId);
+            var product = await dbcontext.Products.FindAsync(productId);
             if (product == null) return new Result<bool>("Sản phẩm không tồn tại", false, false);
-            product.Price = NewPrice;
+            product.Price = newPrice;
             var res = await  dbcontext.SaveChangesAsync() > 0;
             return new Result<bool>("", res, res);
         }

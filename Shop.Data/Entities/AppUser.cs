@@ -13,8 +13,8 @@ namespace Shop.Data.Entities
         public string LastName { set; get; }
         public DateTime Dob { set; get; }
 
-        public List<Cart> Carts { set; get; }
-        public List<Order> Orders { set; get; }
-        public List<Transaction> Transactions { set; get; }
+        public virtual List<Cart> Carts { set; get; }
+        public virtual List<Order> Orders { set; get; }
+        public virtual List<Transaction> Transactions { set; get; }
     }
 }

@@ -16,9 +16,9 @@ namespace Shop.Data.Entities
         public int ViewCount { set; get; }
         public DateTime DateCreated { set; get; }
 
-        public List<ProductInCategory> ProductInCategories { set; get; }
-        public List<OrderDetail> OrderDetails { set; get; }
-        public List<Cart> Carts { set; get; }
+        public virtual List<ProductInCategory> ProductInCategories { set; get; }
+        public virtual List<OrderDetail> OrderDetails { set; get; }
+        public virtual List<Cart> Carts { set; get; }
         // public List<ProductImage> ProductImages { set; get; }
 
     }

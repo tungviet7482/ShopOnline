@@ -7,7 +7,7 @@ namespace Shop.Services.Product
 {
     public interface IProductService
     {
-        Task AddViewcount(int ProductId);
+        Task AddViewcount(int productId);
         Task<Result<int>> Create(ProductCreateRequest request);
         Task<Result<int>> Delete(int productId);
         Task<Result<PageResult<ProductViewModel>>> GetAll();
@@ -15,7 +15,7 @@ namespace Shop.Services.Product
         Task<Result<PageResult<ProductViewModel>>> GetAllPaging(GetManageProductPagingRequest request);
         Task<Result<ProductViewModel>> GetById(int productId);
         Task<Result<int>> Update(ProductUpdateRequest request);
-        Task<Result<bool>> UpdatePrice(int ProductId, decimal NewPrice);
+        Task<Result<bool>> UpdatePrice(int productId, decimal newPrice);
         Task<Result<bool>> UpdateStock(int ProductId, int Quantity);
     }
 }

@@ -20,6 +20,6 @@ namespace Shop.Data.Entities
         public string Provider { set; get; }
 
         public Guid UserId { set; get; }
-        public AppUser AppUser { set; get; }
+        public virtual AppUser AppUser { set; get; }
     }
 }

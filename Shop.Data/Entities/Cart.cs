@@ -14,7 +14,7 @@ namespace Shop.Data.Entities
         public DateTime DateCreated { get; set; }
 
         public Guid UserId { get; set; }
-        public Product Product { get; set; }
-        public AppUser AppUser { get; set; }
+        public virtual Product Product { get; set; }
+        public virtual AppUser AppUser { get; set; }
     }
 }

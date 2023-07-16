@@ -81,9 +81,9 @@ namespace EShopSolution.BackendApi.Controllers
 
         [HttpDelete]
         [Authorize(Roles ="admin")]
-        public async Task<IActionResult> Delete(int Id)
+        public async Task<IActionResult> Delete(int id)
         {
-            var res = await _productService.Delete(Id);
+            var res = await _productService.Delete(id);
             if (res.Status)
                 return Ok();
             return BadRequest(res);

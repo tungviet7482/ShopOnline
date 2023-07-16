@@ -11,6 +11,6 @@ namespace Shop.Data.Entities
         public bool IsShowOnHome { set; get; }
         public int? ParentId { set; get; }
         public Status Status { set; get; }
-        public List<ProductInCategory> ProductInCategories { set; get; }
+        public virtual List<ProductInCategory> ProductInCategories { set; get; }
     }
 }

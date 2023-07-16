@@ -45,10 +45,10 @@ namespace Shop.WebApi.Controllers
                 return BadRequest();
             return Ok(res);
         }
-        [HttpDelete("{Id}")]
-        public async Task<IActionResult> Delete(int Id)
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(int id)
         {
-            var res = await _cartService.Delete(Id);
+            var res = await _cartService.Delete(id);
             if (!res.Status)
                 return BadRequest();
             return Ok(res);

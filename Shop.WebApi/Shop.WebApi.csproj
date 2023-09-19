@@ -16,4 +16,8 @@
     <ProjectReference Include="..\Shop.ViewModels\Shop.ViewModels.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\Images\" />
+  </ItemGroup>
+
 </Project>

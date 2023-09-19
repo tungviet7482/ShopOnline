@@ -21,7 +21,12 @@ namespace Shop.Services.User
         public SignInManager<AppUser> _signInManager;
         public RoleManager<AppRole> _roleManager;
         public IConfiguration _config;
-        public UserService(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, RoleManager<AppRole> roleManager, IConfiguration configuration)
+        public UserService(
+            UserManager<AppUser> userManager, 
+            SignInManager<AppUser> signInManager, 
+            RoleManager<AppRole> roleManager, 
+            IConfiguration configuration
+            )
         {
             _userManager = userManager;
             _signInManager = signInManager;
@@ -63,7 +68,7 @@ namespace Shop.Services.User
 
         public async Task<Result<PageResult<UserViewModel>>> GetUserPaging(GetUserPagingRequest request)
         {
-            var query = _userManager.Users;
+            var query = _userManager.Users.AsNoTracking();
             if (!string.IsNullOrEmpty(request.keyword))
                 query = query.Where(x => x.UserName.Contains(request.keyword) || x.PhoneNumber.Contains(request.keyword));
 
@@ -101,9 +106,13 @@ namespace Shop.Services.User
                 LastName = request.LastName
             };
             var res = await _userManager.CreateAsync(user, request.Password);
-            var assignRole = await AssignRoleToUser(user.Id, "member");
-            if (res.Succeeded && assignRole.ResultObj)
-                return new Result<bool>("", true, true);
+            
+            if (res.Succeeded)
+            {
+                var assignRole = await AssignRoleToUser(user.Id, "member");
+                if(assignRole.ResultObj)
+                    return new Result<bool>("", true, true);
+            }    
             return new Result<bool>("Lỗi đăng ký", false, false);
         }
 

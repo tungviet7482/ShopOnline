@@ -1,28 +1,30 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using Shop.Data.Entities;
 using Shop.Data.EntityF;
 using Shop.ViewModels.Comom;
-using Shop.ViewModels.Product;
-using System;
+using Shop.ViewModels.Products;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Shop.Services.Product
+namespace Shop.Services.Products
 {
     public class ProdcutService : IProductService
     {
-        private ShopDbContext dbcontext;
-        public ProdcutService(ShopDbContext context)
+        private readonly ShopDbContext dbcontext;
+        private readonly IMapper _mapper;
+        public ProdcutService(ShopDbContext context, IMapper mapper)
         {
             dbcontext = context;
+            _mapper = mapper;
         }
 
         public async Task AddViewcount(int productId)
         {
             var product = await dbcontext.Products.FindAsync(productId);
             product.ViewCount++;
-            dbcontext.Update(product);
+            //dbcontext.Update(product);
             await dbcontext.SaveChangesAsync();
         }
 
@@ -31,17 +33,7 @@ namespace Shop.Services.Product
             var query = dbcontext.Categories.SingleOrDefault(x => x.Id == request.CategoryId);
             if (query == null)
                 return new Result<int>("Loại sản phẩm không tồn tại",false, 0);
-            var product = new Shop.Data.Entities.Product()
-            {
-                Price = request.Price,
-                OriginalPrice = request.OriginalPrice,
-                Stock = request.Stock,
-                ViewCount = 0,
-                DateCreated = DateTime.Now,
-                Name = request.Name,
-                Description = request.Description,
-                Details = request.Details,
-            };
+            var product = _mapper.Map<Product> (request);
             dbcontext.Products.Add(product);
             await dbcontext.SaveChangesAsync();
             var productInCategory = new ProductInCategory()
@@ -73,7 +65,7 @@ namespace Shop.Services.Product
                         select new { p, pic };
             //lọc
             if (request.CategoryIds.Count > 0)
-                query = query.Where(x => request.CategoryIds.Contains(x.pic.CategoryId));
+                query = query.AsNoTracking().Where(x => request.CategoryIds.Contains(x.pic.CategoryId));
 
             int totalRow = await query.CountAsync();
             var data = await query.Skip((request.PageIndex - 1) * request.PageSize)
@@ -100,18 +92,7 @@ namespace Shop.Services.Product
             var product = await dbcontext.Products.FindAsync(productId);
             if (product == null)
                 return new Result<ProductViewModel>("Sản phẩm không tồn tại", false, null);
-            var productVM = new ProductViewModel()
-            {
-                Id = product.Id,
-                Name = product.Name,
-                Stock = product.Stock,
-                Price = product.Price,
-                OriginalPrice = product.OriginalPrice,
-                DateCreated = product.DateCreated,
-                ViewCount = product.ViewCount,
-                Description = product.Description,
-                Details = product.Details
-            };
+            var productVM = _mapper.Map<ProductViewModel>(product);
             return new Result<ProductViewModel>("", true, productVM); ;
         }
 
@@ -148,9 +129,9 @@ namespace Shop.Services.Product
         }
         public async Task<Result<PageResult<ProductViewModel>>> GetAll()
         {
-            var query = from p in dbcontext.Products
+            var query = (from p in dbcontext.Products
                         join pic in dbcontext.ProductInCategories on p.Id equals pic.ProductId
-                        select new { p, pic };
+                        select new { p, pic }).AsNoTracking();
 
 
             int totalRow = await query.CountAsync();
@@ -173,9 +154,9 @@ namespace Shop.Services.Product
 
         public async Task<Result<PageResult<ProductViewModel>>> GetAllByCategoryId(GetPublicProductPagingRequest request)
         {
-            var query = from p in dbcontext.Products
+            var query = (from p in dbcontext.Products
                         join pic in dbcontext.ProductInCategories on p.Id equals pic.ProductId
-                        select new { p, pic };
+                        select new { p, pic }).AsNoTracking();
             //lọc
             if (request.CategoryId.HasValue && request.CategoryId.Value > 0)
                 query = query.Where(x => x.pic.CategoryId == request.CategoryId);
@@ -193,7 +174,8 @@ namespace Shop.Services.Product
                                 Details = x.p.Details,
                                 OriginalPrice = x.p.OriginalPrice,
                                 Price = x.p.Price,
-                                ViewCount = x.p.ViewCount
+                                ViewCount = x.p.ViewCount,
+                                
                             }).ToListAsync();
 
             var pageResult = new PageResult<ProductViewModel>(data, totalRow);

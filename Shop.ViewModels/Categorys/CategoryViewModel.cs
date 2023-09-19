@@ -1,6 +1,6 @@
 ﻿using Shop.Data.Enums;
 
-namespace Shop.ViewModels.Category
+namespace Shop.ViewModels.Categorys
 {
     public class CategoryViewModel
     {

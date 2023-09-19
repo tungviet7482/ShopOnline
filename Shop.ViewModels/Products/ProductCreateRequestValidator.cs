@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Shop.ViewModels.Product
+namespace Shop.ViewModels.Products
 {
-    public class ProductCreateRequestValidator: AbstractValidator<ProductCreateRequest>
+    public class ProductCreateRequestValidator : AbstractValidator<ProductCreateRequest>
     {
         public ProductCreateRequestValidator()
         {

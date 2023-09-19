@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Shop.Services.Product;
-using Shop.ViewModels.Product;
+using Shop.Services.Products;
+using Shop.ViewModels.Products;
 using System.Threading.Tasks;
 
 namespace EShopSolution.BackendApi.Controllers
@@ -34,12 +34,12 @@ namespace EShopSolution.BackendApi.Controllers
         {
             var res = await _productService.GetById(productId);
             if (res.Status)
-                return Ok();
+                return Ok(res);
             return BadRequest(res);
         }
 
         [HttpPost]
-        [Authorize(Roles = "admin")]
+       // [Authorize(Roles = "admin")]
         public async Task<IActionResult> Create([FromBody]ProductCreateRequest request)
         {
             var res = await _productService.Create(request);

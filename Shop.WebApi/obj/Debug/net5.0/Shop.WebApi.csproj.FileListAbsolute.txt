@@ -1,12 +1,6 @@
-F:\laptrinh\asp.net\Shop\Shop.WebApi\obj\Debug\net5.0\Shop.WebApi.csproj.AssemblyReference.cache
-F:\laptrinh\asp.net\Shop\Shop.WebApi\obj\Debug\net5.0\Shop.WebApi.GeneratedMSBuildEditorConfig.editorconfig
-F:\laptrinh\asp.net\Shop\Shop.WebApi\obj\Debug\net5.0\Shop.WebApi.AssemblyInfoInputs.cache
-F:\laptrinh\asp.net\Shop\Shop.WebApi\obj\Debug\net5.0\Shop.WebApi.AssemblyInfo.cs
-F:\laptrinh\asp.net\Shop\Shop.WebApi\obj\Debug\net5.0\Shop.WebApi.csproj.CoreCompileInputs.cache
-F:\laptrinh\asp.net\Shop\Shop.WebApi\obj\Debug\net5.0\Shop.WebApi.MvcApplicationPartsAssemblyInfo.cs
-F:\laptrinh\asp.net\Shop\Shop.WebApi\obj\Debug\net5.0\Shop.WebApi.MvcApplicationPartsAssemblyInfo.cache
 F:\laptrinh\asp.net\Shop\Shop.WebApi\bin\Debug\net5.0\appsettings.Development.json
 F:\laptrinh\asp.net\Shop\Shop.WebApi\bin\Debug\net5.0\appsettings.json
+F:\laptrinh\asp.net\Shop\Shop.WebApi\bin\Debug\net5.0\libman.json
 F:\laptrinh\asp.net\Shop\Shop.WebApi\bin\Debug\net5.0\Shop.WebApi.exe
 F:\laptrinh\asp.net\Shop\Shop.WebApi\bin\Debug\net5.0\Shop.WebApi.deps.json
 F:\laptrinh\asp.net\Shop\Shop.WebApi\bin\Debug\net5.0\Shop.WebApi.runtimeconfig.json
@@ -14,6 +8,8 @@ F:\laptrinh\asp.net\Shop\Shop.WebApi\bin\Debug\net5.0\Shop.WebApi.runtimeconfig.
 F:\laptrinh\asp.net\Shop\Shop.WebApi\bin\Debug\net5.0\Shop.WebApi.dll
 F:\laptrinh\asp.net\Shop\Shop.WebApi\bin\Debug\net5.0\ref\Shop.WebApi.dll
 F:\laptrinh\asp.net\Shop\Shop.WebApi\bin\Debug\net5.0\Shop.WebApi.pdb
+F:\laptrinh\asp.net\Shop\Shop.WebApi\bin\Debug\net5.0\AutoMapper.dll
+F:\laptrinh\asp.net\Shop\Shop.WebApi\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 F:\laptrinh\asp.net\Shop\Shop.WebApi\bin\Debug\net5.0\FluentValidation.dll
 F:\laptrinh\asp.net\Shop\Shop.WebApi\bin\Debug\net5.0\FluentValidation.AspNetCore.dll
 F:\laptrinh\asp.net\Shop\Shop.WebApi\bin\Debug\net5.0\FluentValidation.DependencyInjectionExtensions.dll
@@ -28,8 +24,10 @@ F:\laptrinh\asp.net\Shop\Shop.WebApi\bin\Debug\net5.0\Microsoft.EntityFrameworkC
 F:\laptrinh\asp.net\Shop\Shop.WebApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
 F:\laptrinh\asp.net\Shop\Shop.WebApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 F:\laptrinh\asp.net\Shop\Shop.WebApi\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+F:\laptrinh\asp.net\Shop\Shop.WebApi\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 F:\laptrinh\asp.net\Shop\Shop.WebApi\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
 F:\laptrinh\asp.net\Shop\Shop.WebApi\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+F:\laptrinh\asp.net\Shop\Shop.WebApi\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
 F:\laptrinh\asp.net\Shop\Shop.WebApi\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
 F:\laptrinh\asp.net\Shop\Shop.WebApi\bin\Debug\net5.0\Microsoft.Identity.Client.dll
 F:\laptrinh\asp.net\Shop\Shop.WebApi\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
@@ -46,6 +44,7 @@ F:\laptrinh\asp.net\Shop\Shop.WebApi\bin\Debug\net5.0\System.Diagnostics.Diagnos
 F:\laptrinh\asp.net\Shop\Shop.WebApi\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
 F:\laptrinh\asp.net\Shop\Shop.WebApi\bin\Debug\net5.0\System.IO.Pipelines.dll
 F:\laptrinh\asp.net\Shop\Shop.WebApi\bin\Debug\net5.0\System.Runtime.Caching.dll
+F:\laptrinh\asp.net\Shop\Shop.WebApi\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
 F:\laptrinh\asp.net\Shop\Shop.WebApi\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
 F:\laptrinh\asp.net\Shop\Shop.WebApi\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 F:\laptrinh\asp.net\Shop\Shop.WebApi\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
@@ -65,6 +64,13 @@ F:\laptrinh\asp.net\Shop\Shop.WebApi\bin\Debug\net5.0\Shop.ViewModels.dll
 F:\laptrinh\asp.net\Shop\Shop.WebApi\bin\Debug\net5.0\Shop.Data.pdb
 F:\laptrinh\asp.net\Shop\Shop.WebApi\bin\Debug\net5.0\Shop.Services.pdb
 F:\laptrinh\asp.net\Shop\Shop.WebApi\bin\Debug\net5.0\Shop.ViewModels.pdb
+F:\laptrinh\asp.net\Shop\Shop.WebApi\obj\Debug\net5.0\Shop.WebApi.csproj.AssemblyReference.cache
+F:\laptrinh\asp.net\Shop\Shop.WebApi\obj\Debug\net5.0\Shop.WebApi.GeneratedMSBuildEditorConfig.editorconfig
+F:\laptrinh\asp.net\Shop\Shop.WebApi\obj\Debug\net5.0\Shop.WebApi.AssemblyInfoInputs.cache
+F:\laptrinh\asp.net\Shop\Shop.WebApi\obj\Debug\net5.0\Shop.WebApi.AssemblyInfo.cs
+F:\laptrinh\asp.net\Shop\Shop.WebApi\obj\Debug\net5.0\Shop.WebApi.csproj.CoreCompileInputs.cache
+F:\laptrinh\asp.net\Shop\Shop.WebApi\obj\Debug\net5.0\Shop.WebApi.MvcApplicationPartsAssemblyInfo.cs
+F:\laptrinh\asp.net\Shop\Shop.WebApi\obj\Debug\net5.0\Shop.WebApi.MvcApplicationPartsAssemblyInfo.cache
 F:\laptrinh\asp.net\Shop\Shop.WebApi\obj\Debug\net5.0\staticwebassets\Shop.WebApi.StaticWebAssets.Manifest.cache
 F:\laptrinh\asp.net\Shop\Shop.WebApi\obj\Debug\net5.0\staticwebassets\Shop.WebApi.StaticWebAssets.xml
 F:\laptrinh\asp.net\Shop\Shop.WebApi\obj\Debug\net5.0\scopedcss\bundle\Shop.WebApi.styles.css
@@ -74,4 +80,3 @@ F:\laptrinh\asp.net\Shop\Shop.WebApi\obj\Debug\net5.0\Shop.WebApi.dll
 F:\laptrinh\asp.net\Shop\Shop.WebApi\obj\Debug\net5.0\ref\Shop.WebApi.dll
 F:\laptrinh\asp.net\Shop\Shop.WebApi\obj\Debug\net5.0\Shop.WebApi.pdb
 F:\laptrinh\asp.net\Shop\Shop.WebApi\obj\Debug\net5.0\Shop.WebApi.genruntimeconfig.cache
-F:\laptrinh\asp.net\Shop\Shop.WebApi\bin\Debug\net5.0\libman.json

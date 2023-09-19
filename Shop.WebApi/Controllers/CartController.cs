@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Shop.Services.Carts;
-using Shop.ViewModels.Cart;
+using Shop.ViewModels.Carts;
 using System;
 using System.Threading.Tasks;
 

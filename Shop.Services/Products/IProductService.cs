@@ -1,9 +1,9 @@
 ﻿using Shop.ViewModels.Comom;
-using Shop.ViewModels.Product;
+using Shop.ViewModels.Products;
 using System.Threading.Tasks;
 
 
-namespace Shop.Services.Product
+namespace Shop.Services.Products
 {
     public interface IProductService
     {

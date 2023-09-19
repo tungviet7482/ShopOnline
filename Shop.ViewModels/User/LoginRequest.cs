@@ -8,9 +8,6 @@ namespace Shop.ViewModels.User
         public string Password { set; get; }
         public bool RemeberMe { set; get; }
 
-        public LoginRequest()
-        {
-            RemeberMe = false;
-        }
+
     }
 }

@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Shop.ViewModels.Product
+namespace Shop.ViewModels.Products
 {
     public class ProductViewModel
     {

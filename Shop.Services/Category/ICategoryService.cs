@@ -1,4 +1,4 @@
-﻿using Shop.ViewModels.Category;
+﻿using Shop.ViewModels.Categorys;
 using Shop.ViewModels.Comom;
 using System;
 using System.Collections.Generic;

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 
 
-namespace Shop.ViewModels.Product
+namespace Shop.ViewModels.Products
 {
     public class GetManageProductPagingRequest : PagingRequestBase
     {

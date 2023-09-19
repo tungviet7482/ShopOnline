@@ -4,13 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Shop.ViewModels.Cart
+namespace Shop.ViewModels.Carts
 {
-    public class AddCartRequest
+    public class CartItemViewModel
     {
+        public int CartId { set; get; }
         public int ProductId { set; get; }
-        public int Quantity { set; get; }
-        public DateTime DateCreated { get; set; }
         public Guid UserId { get; set; }
+        public string Name { set; get; }
+        public int Quantity { set; get; }
+        public decimal Price { set; get; }
+        public DateTime DateCreated { get; set; }
+
     }
 }
